@@ -1,0 +1,98 @@
+/* Sunya extension, https://github.com/nevillepark/yellow-sunya */
+
+@import url("https://cdn.jsdelivr.net/npm/water.css@2/out/water.css");
+
+/* Variables */
+
+:root {
+	--font-sans: system-ui, sans-serif;
+	--font-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+	--font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+	--font: var(--font-sans);
+	--reg-weight: 300;
+	--bold-weight: 400;
+	--transition: 0.2s;
+}
+
+/* Fonts */
+
+body {
+	font-family: var(--font);
+	font-weight: var(--reg-weight);
+}
+
+h1,h2,h3,h4,h5,h6,b,strong,th {
+	font-weight: var(--bold-weight);
+}
+
+code,pre,tt {
+	font-family: var(--font-mono);
+	font-size: 0.9em;
+	font-weight: 400;
+}
+
+/* Lists */
+
+ul, ol {padding: 0 1em;}
+
+/* Images */
+
+figcaption {font-size: smaller;}
+
+/* Navbar */
+
+header nav ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+header nav ul li {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+/* Footer */
+
+footer {font-size: 0.9em;}
+
+
+/* Extension classes */
+
+	/* Anchor links */
+
+.anchorjs-link {
+	transition: var(--transition);
+}
+
+.anchorjs-link:hover, .anchorjs-link:active {
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+	/* Wiki */
+
+.layout-wiki .entry header p {
+	font-size: 0.9em;
+}
+
+	/* Previous/next extension */
+
+.previousnext {margin-bottom: 15px;}
+.previous + .next {float: right; display: inline-block;}
+
+	/* Breadcrumbs */
+
+.breadcrumb {
+	background-color: var(--background);
+	border-radius: 1em;
+	display: inline-block;
+	font-size: smaller;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+	/* Table of contents */
+
+.toc {
+	list-style-type: none;
+	padding-left: 0;
+}
