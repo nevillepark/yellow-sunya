@@ -32,5 +32,5 @@ Neville Park. [Get help](https://datenstrom.se/yellow/help/).
 
 ## To do
 
-- [ ] Add screenshot
+- [x] Add screenshot
 - [ ] Add styling for more extensions
