@@ -2,7 +2,7 @@
 
 Sunya is a simple theme designed for use with classless CSS.
 
-<!-- <p align="center"><img src="sunya-screenshot.png" alt="Screenshot"></p> -->
+![Screenshot of Sunya, dark and light versions](sunya-screenshot.png)
 
 ## How to install an extension
 
