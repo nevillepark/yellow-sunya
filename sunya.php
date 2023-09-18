@@ -2,7 +2,7 @@
 // Sunya extension, https://github.com/nevillepark/yellow-sunya
 
 class YellowSunya {
-    const VERSION = "0.8.1";
+    const VERSION = "0.8.2";
     public $yellow;         // access to API
 
     // Handle initialisation

@@ -2,15 +2,40 @@
 
 @import url("https://cdn.jsdelivr.net/npm/water.css@2/out/water.css");
 
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('sunya-fonts/OpenSans-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('sunya-fonts/OpenSans-Italic.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url('sunya-fonts/OpenSans-Semibold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 600;
+	src: url('sunya-fonts/OpenSans-SemiboldItalic.woff2') format('woff2');
+}
+
 /* Variables */
 
 :root {
-	--font-sans: system-ui, sans-serif;
-	--font-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
-	--font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+	--font-sans: 'Open Sans', 'Segoe UI', sans-serif;
+	--font-serif: Charter, 'Bitstream Charter', Georgia, Cambria, serif;
+	--font-mono: 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 	--font: var(--font-sans);
-	--reg-weight: 300;
-	--bold-weight: 400;
+	--reg-weight: 400;
+	--bold-weight: 600;
 	--transition: 0.2s;
 }
 
@@ -86,7 +111,7 @@ footer {font-size: 0.9em;}
 	border-radius: 1em;
 	display: inline-block;
 	font-size: smaller;
-	padding: 1em;
+	padding: 0.25em 0.5em;
 	margin-bottom: 1em;
 }
 
