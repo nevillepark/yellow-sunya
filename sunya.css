@@ -1,6 +1,14 @@
 /* Sunya extension, https://github.com/nevillepark/yellow-sunya */
 
-@import url("https://cdn.jsdelivr.net/npm/water.css@2/out/water.css");
+/* 
+Water.css (https://watercss.kognise.dev/) is included here by default, but you 
+can easily swap in your favourite classless (or class-light) stylesheet. 
+Preview some in action: 
+  - https://www.cssbed.com
+  - https://dohliam.github.io/dropin-minimal-css/
+*/
+
+@import url("water.css");
 
 @font-face {
 	font-family: 'Open Sans';
@@ -82,42 +90,26 @@ footer {font-size: 0.9em;}
 
 /* Extension classes */
 
-	/* Anchor links */
-
-.anchorjs-link {
-	transition: var(--transition);
-}
-
-.anchorjs-link:hover, .anchorjs-link:active {
-	text-decoration: none;
-	transition: var(--transition);
-}
+	/* Anchor */
+	.anchor-link {opacity: 0;}
+	:hover > .anchor-link {opacity: 0.9;}
 
 	/* Wiki */
+	.layout-wiki .entry header p {font-size: 0.9em;}
 
-.layout-wiki .entry header p {
-	font-size: 0.9em;
-}
-
-	/* Previous/next extension */
-
-.previousnext {margin-bottom: 15px;}
-.previous + .next {float: right; display: inline-block;}
+	/* Previous/next */
+	.previousnext {margin-bottom: 15px;}
+	.previous + .next {float: right; display: inline-block;}
 
 	/* Breadcrumbs */
-
-.breadcrumb {
-	background-color: var(--background);
-	border-radius: 1em;
-	display: inline-block;
-	font-size: smaller;
-	padding: 0.25em 0.5em;
-	margin-bottom: 1em;
-}
+	.breadcrumb {
+		background-color: var(--background);
+		border-radius: 1em;
+		display: inline-block;
+		font-size: smaller;
+		padding: 0.25em 0.5em;
+		margin-bottom: 1em;
+	}
 
 	/* Table of contents */
-
-.toc {
-	list-style-type: none;
-	padding-left: 0;
-}
+	.toc {list-style-type: none; padding-left: 0;}
