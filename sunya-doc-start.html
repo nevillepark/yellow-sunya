@@ -1,0 +1,16 @@
+<?php $this->yellow->layout("header") ?>
+<main>
+<nav>
+	<?php $pages = $this->yellow->page->getChildren() ?>
+	<ul>
+		<?php foreach ($pages as $page): ?>
+		<li><a<?php echo $page->isActive() ? " class=\"active\" aria-current=\"page\"" : "" ?> href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getHtml("titleNavigation") ?></a>
+		</li>
+		<?php endforeach ?>
+	</ul>
+	<p><a href="<?php echo $pages[0]->getLocation(true) ?>">Next: <?php echo $pages[0]->getHtml("titleContent") ?> &rarr;</a></p>
+</nav>
+<h2><?php echo $this->yellow->page->getHtml("titleContent") ?></h2>
+<?php echo $this->yellow->page->getContentHtml() ?>
+</main>
+<?php $this->yellow->layout("footer") ?>

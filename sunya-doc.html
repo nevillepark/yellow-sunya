@@ -1,0 +1,28 @@
+<?php $this->yellow->layout("header") ?>
+<main>
+<nav>
+	<?php $parent = $this->yellow->page->getParentTop() ?>
+	<?php $pages = $this->yellow->page->getSiblings() ?>
+	<ul>
+	<li><a href="<?php echo $parent->getURL() ?>"><?php echo $parent->getHtml("title") ?></a>
+		<ul>
+		<?php foreach ($pages as $page): ?>
+			<li>
+				<?php if ( $page->isActive() == 0 ): ?> 
+					<a href="<?php echo $page->getURL() ?>"><?php echo $page->getHtml("title") ?></a>
+				<?php else: ?>
+					<strong><?php echo $page->getHtml("title") ?></strong>
+				<?php endif ?>
+				</a> 
+			</li>
+		<?php endforeach ?>
+		</ul>
+	</li>
+	</ul>
+</nav>
+<section>
+	<h2><?php echo $this->yellow->page->getHtml("titleContent") ?></h2>
+	<?php echo $this->yellow->page->getContentHtml() ?>
+</section>
+</main>
+<?php $this->yellow->layout("footer") ?>
